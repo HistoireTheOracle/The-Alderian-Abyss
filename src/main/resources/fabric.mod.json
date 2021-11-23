@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "alderian-abyss",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "The Alderian Abyss",
+  "description": "Alderian Abyss uses CCPacks, Trinkets, Geckolib, and Vanilla Data to make a whole mod.",
   "authors": [
-    "Me!"
+    "OracleHisty"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
@@ -14,23 +14,26 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/alderian-abyss/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.oraclehisty.alderian.Alderian"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "alderian-abyss.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.11.3",
     "fabric": "*",
     "minecraft": "1.17.x",
-    "java": ">=16"
+    "java": ">=16",
+    "ccpacks": ">=1.0.1",
+    "geckolib": "*",
+    "trinkets": "*"
   },
   "suggests": {
     "another-mod": "*"
